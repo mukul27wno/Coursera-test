@@ -1,12 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" >
 <head>
+    <scrip src="angular.min.js"></script>
+    <script src="app.js"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 </head>
-<body>
-    <h1>Hello Mukul!!</h1>
+<body ng-app="NameCalculator">
+    <h1>Name Calculater</h1>
+    <div ng-controller='NameCalculatorController'>
+    Your name: <input type="text" ng-model="name"
+    ng-keyup="displaynumric">
+    <div>
+        Total Numaric value of person's name is: {{totalvalue}}
+        {{name}}
+    </div>
+    </div>
 </body>
 </html>
